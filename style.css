@@ -88,9 +88,12 @@ img {
 }
 
 .nav-logo img {
-    height: 45px;
-    width: 45px;
-    /* paksa persegi karena foto 1024x1024 */
+    height: 40px;
+    width: 40px;
+     border-radius: 50%;       
+    border: 2px solid white;   
+    object-fit: cover;
+    padding: 2px;
     object-fit: contain;
     flex-shrink: 0;
     /* cegah logo menyusut */
