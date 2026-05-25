@@ -533,6 +533,41 @@ img {
 
 @media (max-width: 768px) {
     /* Mobile Navigation */
+    @media (max-width: 768px) {
+
+    /* === FIX NAVBAR === */
+    .nav-logo {
+        font-size: 16px;        /* teks lebih kecil */
+        letter-spacing: 2px;
+    }
+
+    .nav-logo img {
+        height: 35px;           /* logo lebih kecil */
+        width: 35px;
+    }
+
+    /* === FIX HERO / SEMUA SECTION === */
+    .parallax-bg {
+        top: 0;
+        height: 100%;
+        background-size: cover !important;      /* paksa cover, hapus contain */
+        background-position: center center !important;
+    }
+
+    /* === FIX RUANG HITAM === */
+    .parallax-section {
+        min-height: 100svh;     /* pakai svh agar pas di mobile browser */
+    }
+
+    .section-content {
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100svh;
+    }
+}
     .services-grid {
         grid-template-columns: 1fr;
         gap: 35px;
